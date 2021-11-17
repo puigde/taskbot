@@ -80,7 +80,8 @@ def tasks(update, context, id):
             text_send+= tasklist[2][2] + '\n'    
         text_send+= '->'+ tasklist[2][1] + '\n'
         for i in range(4,len(tasklist[2])-1):
-            text_send+= '->' +tasklist[2][i] + '\n'*2
+            text_send+= '->' +tasklist[2][i] + '\n'
+        text_send+= '\n'
         text_send+= "Recorda que els menús actuals son: " + tasklist[2][len(tasklist[2])-1] + '. \n\n'
         if (weeknumber%3==1):
             text_send+= "Recorda que aquesta setmana les aigues et toquen a tu ;)"
