@@ -69,7 +69,7 @@ def tasks(update, context, id):
             text_send+= '->' +tasklist[1][i] + '\n'
         text_send+= '\n'
         
-        if (weeknumber%3==2):
+        if (weeknumber%3==0):
             text_send+= 'Recorda que aquesta setmana les aigues et toquen a tu ;)'
 
     if (id==2):
